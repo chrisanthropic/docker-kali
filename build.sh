@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Install dependencies (debbootstrap)
-sudo apt-get install debootstrap
+# Requires 'debootstrap' 
+# So make sure you install it on your system before you run this script.
+
 
 # Fetch the latest Kali debootstrap script from git
 curl "http://git.kali.org/gitweb/?p=packages/debootstrap.git;a=blob_plain;f=scripts/kali;hb=HEAD" > kali-debootstrap &&\
