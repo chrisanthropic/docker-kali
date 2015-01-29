@@ -9,6 +9,7 @@ Kali Linux is primarily used for security training/testing. Don't trust other pe
 
 ## HOW
 
+### BUILD YOUR OWN
 *NOTE:* This script requires debootstrap, so however you install stuff on your distro make sure you install it before trying to run this script.
 
 From a linux cli:
@@ -19,3 +20,6 @@ cd docker-kali
 ```
 
 Once it's finsihed run `docker images` and you should see it listed as ctarwater/kali.
+
+### USE OURS
+`docker run -i -t --rm ctarwater/kali /bin/bash`
