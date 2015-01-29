@@ -18,4 +18,4 @@ cd docker-kali
 ./build.sh
 ```
 
-Once it's finsihed run `docker images` and you should see it listed as blackfinsecurity/kali.
+Once it's finsihed run `docker images` and you should see it listed as ctarwater/kali.

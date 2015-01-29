@@ -11,13 +11,13 @@ curl "http://git.kali.org/gitweb/?p=packages/debootstrap.git;a=blob_plain;f=scri
 sudo debootstrap kali ./kali-root http://http.kali.org/kali ./kali-debootstrap &&\
 
 # Bundle the install
-sudo tar -C kali-root -c . | sudo docker import - blackfinsecurity/kali &&\
+sudo tar -C kali-root -c . | sudo docker import - ctarwater/kali &&\
 
 # Remove the artifacts
 sudo rm -rf ./kali-root &&\
 
 # Run the image to make sure it worked
-docker run -t -i blackfinsecurity/kali cat /etc/debian_version &&\
+docker run -t -i ctarwater/kali cat /etc/debian_version &&\
 
 # Let us know if it worked or not
 echo "Build OK" || echo "Build failed!" 
