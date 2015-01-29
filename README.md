@@ -1,6 +1,9 @@
 ## WHAT
 Use this file to create a base Kali Linux image for docker.
 
+This install uses the [kali-linux](https://www.kali.org/news/kali-linux-metapackages/) metapackage from Kali, so it's very very striped down and is essentially just the Kali desktop with git and ssh and a few other tools.
+You can install the other tools via apt-get or using Kali's other metapackages.
+
 ## WHY
 Kali Linux is primarily used for security training/testing. Don't trust other people to build your docker-kali image, build your own.
 
